@@ -6,10 +6,6 @@ import java.util.Map;
 
 /**
  * This class implements charts datasets.
- *
- * Development History
- *
- * 30/apr/2016 : First version developed by Leandro Luque
  */
 public class Dataset {
 
