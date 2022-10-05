@@ -170,7 +170,22 @@ public class SVGChart {
         return nonBackgroundPixels;
     }
 
-    private record DataEntryNumPixels(DataEntryKey key, int numPixels) {
+    private class DataEntryNumPixels {
+        private DataEntryKey key;
+        private int numPixels;
+
+        public DataEntryNumPixels(DataEntryKey key, int numPixels) {
+            this.key = key;
+            this.numPixels = numPixels;
+        }
+
+        public DataEntryKey key() {
+            return key;
+        }
+
+        public int numPixels() {
+            return numPixels;
+        }
     }
 
 }

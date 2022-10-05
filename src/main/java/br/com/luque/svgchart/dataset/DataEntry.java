@@ -51,8 +51,8 @@ public class DataEntry {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof DataEntry dataEntry)) return false;
-        return key.equals(dataEntry.key);
+        if (!(o instanceof DataEntry)) return false;
+        return key.equals(((DataEntry)o).key);
     }
 
     @Override
