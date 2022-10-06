@@ -108,8 +108,6 @@ public class SVGSalamanderPainter implements SVGPainter {
 
         final Rectangle2D.Double svgDiagramViewRectangle = new Rectangle2D.Double();
         svgDiagram.getViewRect(svgDiagramViewRectangle);
-        System.out.println(width / svgDiagramViewRectangle.width);
-        System.out.println(height / svgDiagramViewRectangle.height);
         graphics.scale(width / svgDiagramViewRectangle.width, height / svgDiagramViewRectangle.height);
         graphics.translate(x, y);
         svgDiagram.setIgnoringClipHeuristic(true);
