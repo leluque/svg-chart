@@ -1,3 +1,4 @@
 # INSTRUCTIONS
 
-TODO: Write some instructions here!
+This document contains instructions on how to setup the 
+development environment.
